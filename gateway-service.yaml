@@ -21,27 +21,3 @@ spring:
           uri: lb://appointment-service
           predicates:
             - Path=/appointment/**
-        - id: physiotherapist-service
-          uri: lb://physiotherapist-service
-          predicates:
-            - Path=/physiotherapist/**
-        - id: therapy-service
-          uri: lb://therapy-service
-          predicates:
-            - Path=/therapy/**
-        - id: patient-service
-          uri: lb://patient-service
-          predicates:
-            - Path=/patient/**
-        - id: healthrecordandexpertise-service
-          uri: lb://healthrecordandexpertise-service
-          predicates:
-            - Path=/healthrecordandexpertise/**
-        - id: social-service
-          uri: lb://social-service
-          predicates:
-            - Path=/social/**
-        - id: security-service
-          uri: lb://security-service
-          predicates:
-            - Path=/security/**
