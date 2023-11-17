@@ -25,3 +25,23 @@ spring:
           uri: lb://healthrecordandexpertise-service
           predicates:
             - Path=/api/v1/healthrecordandexpertise/**
+        - id: social-service
+          uri: lb://social-service
+          predicates:
+            - Path=/api/v1/reviews/**
+        - id: security-service
+          uri: lb://security-service
+          predicates:
+            - Path=/api/v1/users/**
+        - id: physiotherapist-service
+          uri: lb://physiotherapist-service
+          predicates:
+            - Path=/api/v1/physiotherapists/**
+        - id: therapy-service
+          uri: lb://therapy-service
+          predicates:
+            - Path=/api/v1/theraphies/**
+        - id: patient-service
+          uri: lb://patient-service
+          predicates:
+            - Path=/api/v1/patients/**
