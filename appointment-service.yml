@@ -16,7 +16,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
   application:
-    name: patient-service     
+    name: appointment-service     
 eureka:
   client:
     fetch-registry: true
