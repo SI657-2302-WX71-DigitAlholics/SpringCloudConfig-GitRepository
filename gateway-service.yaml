@@ -20,4 +20,4 @@ spring:
         - id: appointment-service
           uri: lb://appointment-service
           predicates:
-            - Path=/appointment/**
+            - Path=/api/v1/appointments/**
