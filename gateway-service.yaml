@@ -1,4 +1,4 @@
-server.port: 4302
+server.port: 8080
 
 spring:
   cloud:
@@ -61,6 +61,5 @@ eureka:
       leaseExpirationDurationInSeconds: 5
   instance:
     hostname: localhost
-  instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   
