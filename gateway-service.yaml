@@ -1,5 +1,4 @@
 server.port: 4302
-server.error.include-message: always
 
 spring:
   cloud:
