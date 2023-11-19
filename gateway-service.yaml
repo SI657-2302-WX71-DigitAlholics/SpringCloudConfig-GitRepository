@@ -3,10 +3,13 @@ server:
 
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      default-zone: http://eureka:8761/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      initialInstanceInfoReplicationIntervalSeconds: 5
+      registryFetchIntervalSeconds: 5
+      instance:
+      leaseRenewalIntervalInSeconds: 5
+      leaseExpirationDurationInSeconds: 5
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
