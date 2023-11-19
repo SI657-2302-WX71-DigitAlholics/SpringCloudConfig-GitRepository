@@ -1,4 +1,4 @@
-server.port: 4301
+server.port: 8080
 
 spring:
   cloud:
