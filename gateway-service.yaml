@@ -43,3 +43,14 @@ spring:
           uri: lb://patient-service
           predicates:
             - Path=/api/v1/patients/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true
