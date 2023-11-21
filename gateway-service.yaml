@@ -37,7 +37,7 @@ spring:
           predicates:
             - Path=/api/v1/patients/**
         - id: gateway-service
-          uri: http://localhost:8080/
+          uri: http://gateway-service:8080/
           predicates:
             - Path=/api/v1/**
 
