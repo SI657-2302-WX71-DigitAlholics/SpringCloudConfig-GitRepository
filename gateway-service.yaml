@@ -59,6 +59,4 @@ eureka:
       leaseRenewalIntervalInSeconds: 5
       leaseExpirationDurationInSeconds: 5
   instance:
-    hostname: localhost
-  instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
