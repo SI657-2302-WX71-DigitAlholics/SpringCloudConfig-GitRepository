@@ -36,10 +36,6 @@ spring:
           uri: lb://patient-service
           predicates:
             - Path=/api/v1/patients/**
-        - id: gateway-service
-          uri: http://gateway-service:8080/
-          predicates:
-            - Path=/api/v1/**
 
 management:
   endpoints:
@@ -55,16 +51,16 @@ management:
 
 eureka:
   client:
-    register-with-eureka: false
+    fetch-registry: true
+    register-with-eureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+      initialInstanceInfoReplicationIntervalSeconds: 5
+      registryFetchIntervalSeconds: 5
+      instance:
+      leaseRenewalIntervalInSeconds: 5
+      leaseExpirationDurationInSeconds: 5
   instance:
-    leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 5
-    prefer:
-      ip:
-        address:
-          true
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: localhost
 
 
