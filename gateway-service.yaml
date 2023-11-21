@@ -52,12 +52,12 @@ management:
 eureka:
   client:
     register-with-eureka: false
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
-    hostname: eureka-server
+    hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 
