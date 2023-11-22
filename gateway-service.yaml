@@ -12,7 +12,7 @@ spring:
           uri: lb://appointment-service
           predicates:
             - Path=/api/v1/appointments/**
-        - id: healthrecordandexpertise-service
+        - id: healthrecordandexpertise
           uri: lb://healthrecordandexpertise-service
           predicates:
             - Path=/api/v1/healthrecordandexpertise/**
