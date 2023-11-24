@@ -5,5 +5,5 @@ eureka:
     service-url:
       default-zone: https://therapymicro--6d1x4jk.wittydune-ac317a4f.eastus.azurecontainerapps.io/eureka
   instance:
-    instance-id: appointmentapi.internal.wittydune-ac317a4f.eastus.azurecontainerapps.io:${random.value}}
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
