@@ -42,7 +42,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: https://therapymicro--6d1x4jk.wittydune-ac317a4f.eastus.azurecontainerapps.io/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
       initialInstanceInfoReplicationIntervalSeconds: 5
       registryFetchIntervalSeconds: 5
       instance:
