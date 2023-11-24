@@ -9,7 +9,7 @@ spring:
           enabled: true
       routes:
         - id: appointment-service
-          uri: lb://appointmentapi.internal.wittydune-ac317a4f.eastus.azurecontainerapps.io
+          uri: http://appointmentapi--x83ok1g.wittydune-ac317a4f.eastus.azurecontainerapps.io
           predicates:
             - Path=/api/v1/appointments/**
         - id: healthrecordandexpertise-service
